@@ -1,8 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Image from "next/image";
 import "../globals.css";
-const inter = Inter({ subsets: ["latin"] });
+import Logo from "../components/Logo";
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["400", "600"]
+});
 
 export default function RootLayout({
     children,
@@ -11,20 +15,24 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <main className="min-h-screen w-full justify-between grid md:grid-cols-2">
-                    <div className=" md:flex flex-col hidden relative">
+            <body className={poppins.className}>
+                <main className="min-h-screen w-full justify-between grid md:grid-cols-5">
+                    <aside className="md:grid place-items-center hidden relative bg-primary col-span-2 md:px-20">
+                        <p className="text-white text-[28px] font-semibold text-center my-5 ">Social media shared today, tomorrow or by location</p>
                         <Image
-                            src="/images/auth-image.png"
+                            src="/images/phone.png"
                             alt="Auth image"
-                            width={500}
-                            height={500}
-                            className="h-screen w-full object-cover"
+                            width={300}
+                            height={600}
+                            className="object-cover"
                         />
-                    </div>
-                    <div className="md:px-20 px-4 py-[56px] bg-white">
+                    </aside>
+                    <aside className="md:px-20 px-4 py-[56px] bg-white col-span-3">
+                        <div className="mb-10">
+                            <Logo />
+                        </div>
                         {children}
-                    </div>
+                    </aside>
                 </main>
             </body>
         </html>
