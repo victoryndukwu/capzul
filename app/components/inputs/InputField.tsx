@@ -32,7 +32,7 @@ function InputField({
                 {...props}
                 placeholder={placeholder}
                 className={cn(
-                    'rounded-[8px] px-3 py-3 border focus:outline-none focus:ring-[0.2px] transition border-lightGray focus:ring-primary focus:border-primary text-gray',
+                    'rounded-[5px] px-5 py-3 border-[1.5px] focus:outline-none focus:ring-[0.2px] transition border-lightGray focus:ring-primary focus:border-primary text-gray text-sm',
                     {
                         'border-error placeholder-pinkLight focus:border-error focus:ring-[0.2px] focus:ring-error': hasError,
                     },

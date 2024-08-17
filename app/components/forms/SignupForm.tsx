@@ -4,6 +4,7 @@ import InputField from '../inputs/InputField'
 import PasswordField from '../inputs/PasswordField'
 import GoogleAuthButton from '../buttons/GoogleAuthButton'
 import BaseButton from '../buttons/BaseButton'
+import CustomLink from '../typography/CustomLink'
 
 function SignupForm() {
     return (
@@ -17,11 +18,39 @@ function SignupForm() {
 
             </div>
 
-            <div className='flex gap-6'>
+            <div className='flex gap-6 my-10'>
                 <BaseButton>Create account</BaseButton>
                 <GoogleAuthButton> Sign-in with google</GoogleAuthButton>
             </div>
 
+            <div className='flex justify-between'>
+
+                <div className='flex flex-col gap-3 mb-10'>
+                    <div className='flex items-center gap-3'>
+                        <input type="checkbox" name="" id="" />
+                        <p className='text-sm font-normal'>Remember me</p>
+                    </div>
+                    <div className='flex items-center gap-3'>
+                        <input type="checkbox" name="" id="" />
+                        <p className='text-sm font-normal'>I agree to all the <CustomLink href={''}>Terms </CustomLink> and <CustomLink href={''}>Privacy policy</CustomLink> </p>
+                    </div>
+                </div>
+
+                <div>
+                    <CustomLink href={''}>Forgot password?</CustomLink>
+                </div>
+
+
+            </div>
+
+
+            <div className='flex justify-center items-center'>
+                <p className='text-sm text-gray font-normal'>Don’t have an account? {' '}
+                    <CustomLink href={''}>
+                        Log In
+                    </CustomLink>
+                </p>
+            </div>
         </form>
     )
 }

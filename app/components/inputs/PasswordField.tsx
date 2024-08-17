@@ -26,7 +26,7 @@ function PasswordField({ inputClass, labelClass, helperText, label, hasError, ..
                 <input
                     type={showPassword ? "text" : "password"}
                     onBlur={handleBlur}
-                    {...props} className={cn('rounded-[8px] px-3 py-3 border focus:outline-none focus:ring-[0.2px] border-lightGray focus:ring-primary focus:border-primary text-gray w-full',
+                    {...props} className={cn('rounded-[5px] px-5 py-3 border-[1.5px] focus:outline-none focus:ring-[0.2px] border-lightGray focus:ring-primary focus:border-primary text-gray w-full text-sm',
                         {
                             "border-error placeholder-pinkLight focus:border-error focus:ring-[0.2px] focus:ring-error": hasError,
                         },
