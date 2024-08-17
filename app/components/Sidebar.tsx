@@ -13,7 +13,7 @@ function Sidebar() {
                     alt="Auth image"
                     width={255}
                     height={480}
-                    className="object-cover z-20 relative left-[110px] h-[300px] w-[484px]"
+                    className="object-cover z-20 relative left-[125px] h-[300px] w-[484px]"
                 />
                 <Image
                     src="/images/phone.png"
@@ -27,7 +27,7 @@ function Sidebar() {
                     alt="Auth image"
                     width={300}
                     height={600}
-                    className="object-cover z-20 relative right-[110px] h-[300px] w-[484px]"
+                    className="object-cover z-20 relative right-[125px] h-[300px] w-[484px]"
                 />
             </div>
         </aside>

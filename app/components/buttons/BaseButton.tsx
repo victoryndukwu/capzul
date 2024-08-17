@@ -14,7 +14,7 @@ function Button({ children, className, variant = 'primary', ...props }: ButtonPr
     return (
         <button {...props} className={cn('py-3 px-6 rounded-[5px] font-semibold text-sm transition ease-in duration-200 text-white w-full',
             {
-                "bg-primary hover:bg-navyBlueNormal": variant === 'primary',
+                "bg-primary hover:bg-darkBlue": variant === 'primary',
             }
             ,
             `${poppins.className}`,
