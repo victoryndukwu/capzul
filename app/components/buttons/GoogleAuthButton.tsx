@@ -9,7 +9,7 @@ type GoogleAuthButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 function GoogleAuthButton({ children, className, ...props }: GoogleAuthButtonProps) {
     return (
-        <button {...props} className={twMerge('py-3 px-6 rounded-[5px] text-sm text-white bg-gray font-semibold w-full flex justify-center items-center gap-[10px] hover:bg-whiteDark focus:outline-none focus-visible:ring focus-visible:ring-primary-500 transition ease-in duration-200', `${poppins.className}`, className)}>
+        <button {...props} className={twMerge('py-3 px-6 rounded-[5px] text-sm text-white hover:bg-darkGray bg-gray font-semibold w-full flex justify-center items-center gap-[10px] transition ease-in duration-200', `${poppins.className}`, className)}>
 
             {/* svg */}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
