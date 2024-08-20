@@ -27,7 +27,7 @@ export default function CustomDatePicker({
     placeholder,
     ...props
 }: DatePickerProps) {
-    const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState<Date | null>(new Date());
 
     return (
         <div className={`flex flex-col gap-2 ${poppins.className} `}>
