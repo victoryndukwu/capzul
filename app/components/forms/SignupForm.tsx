@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import InputField from '../inputs/InputField'
 import PasswordField from '../inputs/PasswordField'
 import GoogleAuthButton from '../buttons/GoogleAuthButton'
@@ -14,7 +15,7 @@ function SignupForm() {
                 <InputField label='First name' />
                 <InputField label='Last name' />
                 <InputField label='Email or phone number' />
-                <DatePicker label='Date of birth (MM/DD/YY)'/>
+                <DatePicker label='Date of birth (MM/DD/YY)' />
                 <PasswordField label='Password' />
                 <PasswordField label='Confirm Password' />
             </div>
@@ -47,6 +48,25 @@ function SignupForm() {
                         Log In
                     </CustomLink>
                 </p>
+            </div>
+
+            <div className='flex gap-3 mt-10'>
+                <Image
+                    src="/images/google.svg"
+                    alt="Get it on Google play"
+                    className="cursor-pointer"
+                    width={134}
+                    height={38}
+                    priority
+                />
+                <Image
+                    src="/images/apple.svg"
+                    alt="Download on the App store"
+                    className="cursor-pointer"
+                    width={134}
+                    height={38}
+                    priority
+                />
             </div>
         </form>
     )
