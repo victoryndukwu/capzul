@@ -5,6 +5,7 @@ import PasswordField from '../inputs/PasswordField'
 import GoogleAuthButton from '../buttons/GoogleAuthButton'
 import BaseButton from '../buttons/BaseButton'
 import CustomLink from '../typography/CustomLink'
+import DatePicker from '../inputs/DatePicker'
 
 function SignupForm() {
     return (
@@ -13,6 +14,7 @@ function SignupForm() {
                 <InputField label='First name' />
                 <InputField label='Last name' />
                 <InputField label='Email or phone number' />
+                <DatePicker label='Date of birth (MM/DD/YY)'/>
                 <PasswordField label='Password' />
                 <PasswordField label='Confirm Password' />
             </div>

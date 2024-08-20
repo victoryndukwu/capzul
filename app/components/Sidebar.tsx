@@ -30,6 +30,12 @@ function Sidebar() {
                     className="object-cover z-20 relative right-[125px] h-[300px] w-[484px]"
                 />
             </div>
+
+            <div className='flex gap-2'>
+                <div className="w-[10px] h-[10px] border border-white rounded-full bg-inherit"></div>
+                <div className="w-[10px] h-[10px] border border-white rounded-full bg-white"></div>
+                <div className="w-[10px] h-[10px] border border-white rounded-full bg-transparent"></div>
+            </div>
         </aside>
     )
 }
